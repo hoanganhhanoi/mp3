@@ -36,6 +36,31 @@ public class DefaultController {
         return "/login";
     }
 
+    @GetMapping("/signin")
+    public String signin() {
+        return "/signin";
+    }
+
+    @GetMapping("/signup")
+    public String signup() {
+        return "/signup";
+    }
+
+    @GetMapping("/artist")
+    public String getArtist() {
+        return "/artist";
+    }
+
+    @GetMapping("/chart")
+    public String showChart() {
+        return "/chart";
+    }
+
+    @GetMapping("/profile")
+    public String getProfile() {
+        return "/profile";
+    }
+
     @GetMapping("/403")
     public String error403() {
         return "/error/403";
